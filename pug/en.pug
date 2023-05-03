@@ -1,0 +1,45 @@
+extends index
+
+block html
+    - var htmlLang = 'en'
+
+block seo
+    - var seo = {title: 'Klymenko Family Charity Foundation', description: '', keywords: ''}
+
+block header
+    - var currentLang = 'Eng'
+    -
+        var nav = [
+            {
+                href: '#direction',
+                title: 'Directions'
+            },
+            {
+                href: '#footer',
+                title: 'Contacts'
+            }
+        ]
+
+block intro
+    - var introTitle = 'Klymenko Family Charity Foundation'
+
+block direction
+    - var directionTitle = 'Directions of activity'
+    -
+        var directionItems = [
+            {
+                icon: 'img/sprite.svg#direction-1',
+                title: 'Helping Churches',
+                text: 'Our goal is to develop and maintain spirituality, so we build and restore churches and help Sunday Schools.'
+            },
+            {
+                icon: 'img/sprite.svg#direction-2',
+                title: 'Supporting Sports',
+                text: 'We are engaged in projects aimed at sports popularization. Special attention is paid to initiatives related to children-and-youth sports and healthcare programs.'
+            },
+            {
+                icon: 'img/sprite.svg#direction-3',
+                title: 'Helping those in need',
+                text: 'We help people found themselves in a difficult life situation.'
+            }
+        ]

@@ -1,0 +1,45 @@
+extends index
+
+block html
+    - var htmlLang = 'jp'
+
+block seo
+    - var seo = {title: '克里缅科家庭慈善基金', description: '', keywords: ''}
+
+block header
+    - var currentLang = '俄语'
+    -
+        var nav = [
+            {
+                href: '#direction',
+                title: '活动领域'
+            },
+            {
+                href: '#footer',
+                title: '联系方式'
+            }
+        ]
+
+block intro
+    - var introTitle = '克里缅科家庭慈善基金'
+
+block direction
+    - var directionTitle = '活动领域'
+    -
+        var directionItems = [
+            {
+                icon: 'img/sprite.svg#direction-1',
+                title: '帮助教会',
+                text: '我们的目标是发展和维持灵性，因此我们建造和修复教堂，并支持主日学。'
+            },
+            {
+                icon: 'img/sprite.svg#direction-2',
+                title: '支持体育',
+                text: '我们参与了旨在促进体育的项目。我们特别关注与儿童和青年体育以及健康和保健方案有关的举措。'
+            },
+            {
+                icon: 'img/sprite.svg#direction-3',
+                title: '帮助有需要的人',
+                text: '我们帮助处于困境中的人。'
+            }
+        ]

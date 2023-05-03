@@ -1,0 +1,25 @@
+header.header(role="banner")
+    .container.header__cols
+        .header__logo
+            svg(width="115" height="75")
+                use(xlink:href="img/sprite.svg#logo")
+
+        nav.header__nav(role="navigation")
+            ul.header__nav-list(role="list")
+                each item in nav
+                    li.header__nav-list-item(role="listitem")
+                        button.header__nav-button(type="button" data-scroll= item.href role="button")= item.title
+
+        .header__lang
+            button.header__lang-button(type="button" role="button" aria-label="Сменить язык" data-toggle)
+                svg(width="32" height="32")
+                    use(xlink:href="img/sprite.svg#lang")
+                = currentLang
+
+            ul.header__lang-list(role="list")
+                li.header__lang-list-item(role="listitem")
+                    a(href="index.html" role="link") Рус
+                li.header__lang-list-item(role="listitem")
+                    a(href="en.html" role="link") Eng
+                li.header__lang-list-item(role="listitem")
+                    a(href="jp.html" role="link") 俄语

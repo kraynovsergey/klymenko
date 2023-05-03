@@ -1,0 +1,148 @@
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	background: $color_white;
+	font-family: 'Noto Serif', sans-serif;
+	color: $color_violet;
+	font-size: 1.33rem;
+
+	@media (max-width: 991px) {
+		font-size: 1.11rem;
+	}
+
+	&__cols {
+		height: 122px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (max-width: 991px) {
+			height: 98px;
+		}
+	}
+
+	&__logo {
+		& svg {
+			fill: $color_violet;
+
+			@media (max-width: 991px) {
+				height: 50px;
+				width: auto;
+			}
+		}
+	}
+
+	&__nav {
+		margin: 0 30px;
+		display: flex;
+
+		@media (max-width: 767px) {
+			display: none;
+		}
+
+		&-list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&-item {
+				margin-right: 120px;
+
+				@media (max-width: 1440px) {
+					margin-right: 60px;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+
+		&-button {
+			&:hover {
+				@media (min-width: 991px) {
+					color: $color_black;
+				}
+			}
+		}
+	}
+
+	&__lang {
+		position: relative;
+
+		&-button {
+			display: flex;
+			align-items: center;
+
+			& svg {
+				fill: $color_violet;
+				margin-right: 5px;
+			}
+
+			&::after {
+				content: '';
+				width: 8px;
+				height: 8px;
+				border-left: 1px solid $color_violet;
+				border-bottom: 1px solid $color_violet;
+				transform: rotate(-45deg);
+				margin-left: 10px;
+				position: relative;
+			}
+
+			&._active {
+				&::after {
+					transform: rotate(135deg);
+					top: 5px;
+				}
+
+				& + .header__lang-list {
+					display: flex;
+				}
+			}
+		}
+
+		&-list {
+			position: absolute;
+			top: calc(100% + 10px);
+			right: 0;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			flex-direction: column;
+			box-shadow: 0 0 5px rgba(0,0,0,.1);
+			background: $color_white;
+			min-width: 100%;
+			border-radius: 16px;
+			overflow: hidden;
+			font-size: 1.11rem;
+			display: none;
+
+			&-item {
+				&._active {
+					& a {
+						background: $color_grey;
+					}
+				}
+
+				& a {
+					white-space: nowrap;
+					padding: 10px 24px;
+					display: block;
+					color: inherit;
+					text-decoration: none;
+					text-align: center;
+
+					&:hover {
+						background: $color_grey;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+section.intro
+    picture.intro__picture(role="img")
+        source(type="image/webp" srcset="img/tmp/webp/intro@2x.webp 2x, img/tmp/webp/intro.webp 1x" media="(min-width: 576px)")
+        source(type="image/jpeg" srcset="img/tmp/intro@2x.jpg 2x, img/tmp/intro.jpg 1x" media="(min-width: 576px)")
+        source(type="image/webp" srcset="img/tmp/webp/intro-mobile@2x.webp 2x, img/tmp/webp/intro-mobile.webp 1x" media="(max-width: 575px)")
+        source(type="image/jpeg" srcset="img/tmp/intro-mobile@2x.jpg 2x, img/tmp/intro-mobile.jpg 1x" media="(max-width: 575px)")
+        img(src="img/tmp/intro.jpg" alt="" width="1919" height="1152")
+
+    .intro__overlay
+        .container.intro__container
+            h1.intro__h1(role="heading")= introTitle

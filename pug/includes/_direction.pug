@@ -1,0 +1,14 @@
+section.direction(id="direction")
+    .container
+        h2.direction__h2(role="heading")= directionTitle
+
+        .direction__cols
+            each item in directionItems
+                .direction__col
+                    article.direction__item(role="article")
+                        svg.direction__svg(width="100" height="100")
+                            use(xlink:href= item.icon)
+                        h3.direction__title(role="heading")= item.title
+                        p.direction__text= item.text
+
+

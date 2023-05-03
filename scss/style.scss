@@ -1,0 +1,25 @@
+$color_violet: #56265C;
+$color_black: #000;
+$color_white: #fff;
+$color_grey: #F4F4F4;
+
+$transition: .5s ease;
+
+/* System */
+@import "includes/reboot";
+@import "includes/grid";
+@import "includes/fonts";
+@import "includes/default";
+
+/* Blocks */
+@import "includes/header";
+@import "includes/main";
+@import "includes/intro";
+@import "includes/direction";
+@import "includes/footer";
+
+
+
+
+
+
