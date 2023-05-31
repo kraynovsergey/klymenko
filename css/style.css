@@ -381,8 +381,6 @@ body {
   color: #000;
   font-weight: normal;
   font-style: normal; }
-  body.compensate-for-scrollbar .header {
-    padding-right: 15px; }
 
 body * {
   outline: none; }
@@ -420,7 +418,7 @@ body textarea {
 
 /* Blocks */
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -516,12 +514,6 @@ body textarea {
         text-align: center; }
         .header__lang-list-item a:hover {
           background: #F4F4F4; }
-
-.main {
-  padding: 122px 0 0; }
-  @media (max-width: 991px) {
-    .main {
-      padding: 98px 0 0; } }
 
 .intro {
   position: relative; }
