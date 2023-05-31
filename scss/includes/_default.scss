@@ -8,6 +8,12 @@ body {
 	color: $color_black;
 	font-weight: normal;
 	font-style: normal;
+
+	&.compensate-for-scrollbar {
+		& .header {
+			padding-right: 15px;
+		}
+	}
 }
 
 body * {
