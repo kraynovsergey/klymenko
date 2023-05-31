@@ -1,4 +1,4 @@
-extends index
+extends base
 
 block html
     - var htmlLang = 'en'
@@ -43,3 +43,36 @@ block direction
                 text: 'We help people found themselves in a difficult life situation.'
             }
         ]
+
+block footer
+    - var requisites = 'Bank details'
+
+block requisites
+    -
+        var requisitesItems = [
+            {
+                title: 'Full name',
+                text: 'Klymenko Family Charity Foundation RUS'
+            },
+            {
+                title: 'INN',
+                text: '7703404105'
+            },
+            {
+                title: 'KPP',
+                text: '773101001'
+            },
+            {
+                title: 'Acc.',
+                text: '40703810901300000670 at AO «Alfa-bank»'
+            },
+            {
+                title: 'Corr. acc.',
+                text: '30101810200000000593'
+            },
+            {
+                title: 'RCBIC',
+                text: '044525593'
+            },
+        ]
+

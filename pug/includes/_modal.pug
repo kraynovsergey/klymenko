@@ -1,0 +1,10 @@
+.modal(id="modal-requisites")
+    header.modal__header(role="banner")
+        h3.modal__title(role="heading")= requisites
+        button.modal__close(type="button" role="button" aria-label="Закрыть окно" data-fancybox-close)
+
+    .requisites
+        each item in requisitesItems
+            .requisites__item
+                span= item.title
+                span= item.text

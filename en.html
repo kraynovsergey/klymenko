@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -100,10 +101,27 @@
             </svg>
             <p class="footer__copyright">©Klymenko Family Foundation, 2015</p>
           </div>
-          <div class="footer__col _right"><a class="footer__link" href="mailto:charity@kffund.ru" role="link">charity@kffund.ru</a><a class="footer__link" href="tel:+74951390342" role="link">+7 (495) 139-03-42</a></div>
+          <div class="footer__col _right"><a class="footer__link" href="mailto:charity@kffund.ru" role="link">charity@kffund.ru</a><a class="footer__link" href="tel:+74951390342" role="link">+7 (495) 139-03-42</a>
+            <button class="footer__requisites" type="button" role="button" data-fancybox data-src="#modal-requisites">Bank details</button>
+          </div>
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal-requisites">
+      <header class="modal__header" role="banner">
+        <h3 class="modal__title" role="heading">Bank details</h3>
+        <button class="modal__close" type="button" role="button" aria-label="Закрыть окно" data-fancybox-close></button>
+      </header>
+      <div class="requisites">
+        <div class="requisites__item"><span>Full name</span><span>Klymenko Family Charity Foundation RUS</span></div>
+        <div class="requisites__item"><span>INN</span><span>7703404105</span></div>
+        <div class="requisites__item"><span>KPP</span><span>773101001</span></div>
+        <div class="requisites__item"><span>Acc.</span><span>40703810901300000670 at AO «Alfa-bank»</span></div>
+        <div class="requisites__item"><span>Corr. acc.</span><span>30101810200000000593</span></div>
+        <div class="requisites__item"><span>RCBIC</span><span>044525593</span></div>
+      </div>
+    </div>
+    <script src="js/libs/fancybox.umd.js"></script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>

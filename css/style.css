@@ -754,5 +754,100 @@ body textarea {
         margin-bottom: 0; } }
   .footer__link:hover {
     color: #000; }
+.footer__requisites {
+  font-size: 1.33rem;
+  color: #56265C;
+  margin-top: 25px; }
+  @media (max-width: 991px) {
+    .footer__requisites {
+      font-size: 1.11rem;
+      margin-top: 10px; } }
+  @media (max-width: 767px) {
+    .footer__requisites {
+      margin-top: 0; } }
+  .footer__requisites:hover {
+    color: #000; }
+
+.fancybox__backdrop {
+  background: rgba(0, 0, 0, 0.5); }
+
+.modal {
+  display: none;
+  width: 100%;
+  max-width: 864px;
+  padding: 36px;
+  background: #fff;
+  border-radius: 32px; }
+  @media (max-width: 575px) {
+    .modal {
+      padding: 20px 16px;
+      border-radius: 24px; } }
+  .modal .is-close {
+    display: none; }
+  .modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px; }
+    @media (max-width: 575px) {
+      .modal__header {
+        margin-bottom: 20px; } }
+  .modal__title {
+    font-size: 1.77rem;
+    color: #56265C;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', sans-serif; }
+    @media (max-width: 575px) {
+      .modal__title {
+        font-size: 1.11rem; } }
+  .modal__close {
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+    background: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .modal__close::after, .modal__close::before {
+      content: '';
+      width: 15px;
+      height: 1px;
+      background: #56265C;
+      position: absolute; }
+    .modal__close::after {
+      transform: rotate(45deg); }
+    .modal__close::before {
+      transform: rotate(-45deg); }
+
+.requisites {
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 575px) {
+    .requisites {
+      margin: 0 -16px; } }
+  .requisites__item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 16px; }
+    @media (max-width: 575px) {
+      .requisites__item {
+        border-radius: 0;
+        flex-direction: column;
+        align-items: flex-start; } }
+    .requisites__item:nth-child(2n + 1) {
+      background: #F4F4F4; }
+    .requisites__item span:first-child {
+      min-width: 130px;
+      max-width: 130px;
+      color: rgba(0, 0, 0, 0.5); }
+      @media (max-width: 575px) {
+        .requisites__item span:first-child {
+          margin-bottom: 8px;
+          min-width: unset;
+          max-width: unset; } }
 
 /*# sourceMappingURL=style.css.map */

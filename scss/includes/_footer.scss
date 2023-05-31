@@ -107,4 +107,23 @@
 			color: $color_black;
 		}
 	}
+
+	&__requisites {
+		font-size: 1.33rem;
+		color: $color_violet;
+		margin-top: 25px;
+
+		@media (max-width: 991px) {
+			font-size: 1.11rem;
+			margin-top: 10px;
+		}
+
+		@media (max-width: 767px) {
+			margin-top: 0;
+		}
+
+		&:hover {
+			color: $color_black;
+		}
+	}
 }

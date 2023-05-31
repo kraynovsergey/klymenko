@@ -24,6 +24,12 @@ html(lang= htmlLang)
                     var directionItems = ''
             include includes/_direction
 
+        block footer
+            - var requisites = ''
         include includes/_footer
+
+        block requisites
+            - var requisitesItems = ''
+        include includes/_modal
 
         include includes/_scripts

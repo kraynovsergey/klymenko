@@ -1,4 +1,4 @@
-extends index
+extends base
 
 block html
     - var htmlLang = 'jp'
@@ -42,4 +42,36 @@ block direction
                 title: '帮助有需要的人',
                 text: '我们帮助处于困境中的人。'
             }
+        ]
+
+block footer
+    - var requisites = '银行明细'
+
+block requisites
+    -
+        var requisitesItems = [
+            {
+                title: '名称',
+                text: '俄罗斯克里缅科家庭慈善基金'
+            },
+            {
+                title: '纳税人识别号',
+                text: '7703404105'
+            },
+            {
+                title: '组织机构代码',
+                text: '773101001'
+            },
+            {
+                title: '账号',
+                text: '40703810901300000670 at AO «Alfa-bank»'
+            },
+            {
+                title: '代理帐',
+                text: '30101810200000000593'
+            },
+            {
+                title: '银行统一代码',
+                text: '044525593'
+            },
         ]

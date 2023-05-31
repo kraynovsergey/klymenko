@@ -1,4 +1,5 @@
 extends base
+
 block html
 	- var htmlLang = 'ru'
 
@@ -41,4 +42,36 @@ block direction
 				title: 'Помощь нуждающимся',
 				text: 'Мы помогаем людям, оказавшимся в сложной жизненной ситуации.'
 			}
+		]
+
+block footer
+	- var requisites = 'Наши реквизиты'
+
+block requisites
+	-
+		var requisitesItems = [
+			{
+				title: 'Название',
+				text: 'Благотворительный Фонд Семьи Клименко РУС'
+			},
+			{
+				title: 'ИНН',
+				text: '7703404105'
+			},
+			{
+				title: 'КПП',
+				text: '773101001'
+			},
+			{
+				title: 'Р/С',
+				text: '40703810901300000670 в АО «АЛЬФА-БАНК»'
+			},
+			{
+				title: 'К/С',
+				text: '30101810200000000593'
+			},
+			{
+				title: 'БИК',
+				text: '044525593'
+			},
 		]
