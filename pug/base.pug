@@ -1,0 +1,29 @@
+doctype html
+block html
+    - var htmlLang = ''
+html(lang= htmlLang)
+    head
+        block seo
+            - var seo = ''
+        include includes/_meta
+    body
+        block header
+            - var currentLang = ''
+            -
+                var nav = ''
+        include includes/_header
+
+        main.main(role="main")
+            block intro
+                - var introTitle = ''
+            include includes/_intro
+
+            block direction
+                - var directionTitle = ''
+                -
+                    var directionItems = ''
+            include includes/_direction
+
+        include includes/_footer
+
+        include includes/_scripts

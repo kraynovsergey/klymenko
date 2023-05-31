@@ -1,54 +1,44 @@
-doctype html
+extends base
 block html
 	- var htmlLang = 'ru'
-html(lang= htmlLang)
-	head
-		block seo
-			- var seo = {title: 'Благотворительный фонд семьи Клименко', description: '', keywords: ''}
-		include includes/_meta
-	body
-		block header
-			- var currentLang = 'Рус'
-			-
-				var nav = [
-					{
-						href: '#direction',
-						title: 'Направления'
-					},
-					{
-						href: '#footer',
-						title: 'Контакты'
-					}
-				]
-		include includes/_header
 
-		main.main(role="main")
-			block intro
-				- var introTitle = 'Благотворительный фонд семьи Клименко'
-			include includes/_intro
+block seo
+	- var seo = {title: 'Благотворительный фонд семьи Клименко', description: '', keywords: ''}
 
-			block direction
-				- var directionTitle = 'Направления деятельности'
-				-
-					var directionItems = [
-						{
-							icon: 'img/sprite.svg#direction-1',
-							title: 'Помощь церквям',
-							text: 'Наша цель — развивать и поддерживать духовность, поэтому мы строим и реставрируем церкви, а также помогаем воскресным школам.'
-						},
-						{
-							icon: 'img/sprite.svg#direction-2',
-							title: 'Поддержка спорта',
-							text: 'Мы занимаемся проектами, нацеленными на популяризацию спорта. Особое внимание мы уделяем инициативам, связанным с детско-юношеским спортом и оздоровительными программами.'
-						},
-						{
-							icon: 'img/sprite.svg#direction-3',
-							title: 'Помощь нуждающимся',
-							text: 'Мы помогаем людям, оказавшимся в сложной жизненной ситуации.'
-						}
-					]
-			include includes/_direction
+block header
+	- var currentLang = 'Рус'
+	-
+		var nav = [
+			{
+				href: '#direction',
+				title: 'Направления'
+			},
+			{
+				href: '#footer',
+				title: 'Контакты'
+			}
+		]
 
-		include includes/_footer
+block intro
+	- var introTitle = 'Благотворительный фонд семьи Клименко'
 
-		include includes/_scripts
+block direction
+	- var directionTitle = 'Направления деятельности'
+	-
+		var directionItems = [
+			{
+				icon: 'img/sprite.svg#direction-1',
+				title: 'Помощь церквям',
+				text: 'Наша цель — развивать и поддерживать духовность, поэтому мы строим и реставрируем церкви, а также помогаем воскресным школам.'
+			},
+			{
+				icon: 'img/sprite.svg#direction-2',
+				title: 'Поддержка спорта',
+				text: 'Мы занимаемся проектами, нацеленными на популяризацию спорта. Особое внимание мы уделяем инициативам, связанным с детско-юношеским спортом и оздоровительными программами.'
+			},
+			{
+				icon: 'img/sprite.svg#direction-3',
+				title: 'Помощь нуждающимся',
+				text: 'Мы помогаем людям, оказавшимся в сложной жизненной ситуации.'
+			}
+		]
